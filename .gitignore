@@ -1,5 +1,7 @@
 *.egg-info
 .coverage
 .pytest_cache
-venv
+.venv
 database/*
+olympics/__pycache__
+tests/__pycache__

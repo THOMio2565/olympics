@@ -10,3 +10,6 @@ dependencies = [
   'rich',
   'fastapi[standard]',
 ]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov"

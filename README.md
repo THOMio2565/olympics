@@ -278,3 +278,13 @@ méthodes pour s’assurer que le code suit toujours ces bonnes pratiques.
 
 Si vous avez des réponses à écrire, des remarques à faire sur votre travail,
 ajoutez-les à la fin de ce fichier.
+
+### Partie obligatoire - Couverture à 100%
+
+- 1 : J'ai installé la bibliothèque pytest-cov pour afficher la couverture des tests. Ensuite, j'ai ajouté la section [tool.pytest.ini_options] dans pyproject.toml .(Ignorez le titre et le commentaire du commit, ça m'apprendra a me précipiter sans lire)
+
+- 2 : J'ai fait cela dans la section ajoutée [tool.coverage.run] 
+
+- 3 : Grâce à pytest-cov, j'ai ajouté l'option --cov-report term-missing qui, d'après la doc, ajoute les lignes de code non couvertes par les tests pour chaque fichier
+
+- 4 : Après avoir éteint mon cerveau en copiant-collant la même structure de code 18 fois, je peux attester que db.py est désormais "couvert" à 100%

@@ -288,3 +288,20 @@ ajoutez-les à la fin de ce fichier.
 - 3 : Grâce à pytest-cov, j'ai ajouté l'option --cov-report term-missing qui, d'après la doc, ajoute les lignes de code non couvertes par les tests pour chaque fichier
 
 - 4 : Après avoir éteint mon cerveau en copiant-collant la même structure de code 18 fois, je peux attester que db.py est désormais "couvert" à 100%
+
+- 5 : passe (idem pour le debuggage des 3 autres programmes)
+
+- 6, 7 et 8 : Error 404 Brain.exe not found. Autrement dit j'ai copié collé jusqu'à avoir 100% de couverture
+
+- 7 : "file" permet de rediriger l'output d'une fonction vers un fichier spécifié. Dans votre code, "file = None" permet de forcer l'output des fonctions à être affiché dans l'interface de commande
+
+- 8 : "pragma: no cover" sert à signaler à pytest que la partie de code correspondant à la ligne ou le commentaire est écrit doit être ignoré
+
+- 9 : Bien que pytest-cov indique que le code est couvert à 100%, il est facile, par exemple, de mettre "# pragma: no cover" partout et dire que c'est fait. De plus une couverture à 100% n'indique pas qu'absolument tout a été testé. Une ligne est considérée comme testée à partir du moment où un seul test réussit, ce qui ne permet pas de sécuriser le code puisqu'on pourrait passer des paramètres ayant des effets non escomptés (comme supprimer system32 sur un pc windows). Sur ce TP, nous n'avons fait que des tests unitaires en ayant pour seul but d'atteindre une couverture à 100%. Par conséquent, et si on avait le temps d'apprendre, on aurait aussi pu faire d'autres types de tests comme des tests de performances.
+
+- 10 : Je vais être honnête, vous m'auriez demandé de supprimer mon OS dans les étapes du TP et il y a de grandes chances que je le fasse sans poser de questions, au vu de mon état de fatigue. Regrouper une correction de bug et son test de non-regression associé dans un même commit permet de s'assurer que le bug en question n'aura aucune chance de revenir dans les versions futures.
+
+
+### Remarques personnelles
+
+Bien que le TP soit intéressant, j'ai vraiment beaucoup de mal à comprendre le code, en partie sur les requêtes SQL. À mon humble avis, je pense que le code est encore un niveau trop haut par rapport à nos connaissances en début de deuxième année.

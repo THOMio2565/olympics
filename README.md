@@ -301,6 +301,10 @@ ajoutez-les à la fin de ce fichier.
 
 - 10 : Je vais être honnête, vous m'auriez demandé de supprimer mon OS dans les étapes du TP et il y a de grandes chances que je le fasse sans poser de questions, au vu de mon état de fatigue. Regrouper une correction de bug et son test de non-regression associé dans un même commit permet de s'assurer que le bug en question n'aura aucune chance de revenir dans les versions futures.
 
+### Optionnel : Mise en place d'un GitHub Actions
+
+J'ai principalement suivi le tutoriel de base de GitHub pour mettre en place cette solution. Après avoir galéré avec python pour ubuntu/linux, j'ai décidé de me passer de cet OS puisque techniquement il suffit de 2 OS (mac et windows) pour remplir le critère de "plusieurs plateformes". Étant donnée qu'un des scripts contient une commande "match case", qui a été introduite à partir de python 3.10, il était logique de faire des tests à partir de cette version ainsi que sur une version ultérieure, à savoir python 3.11.
+J'ai quand même modifié certaines lignes, notamment pour l'installation des dépendances, où j'ai utilisé la commande fournie lors de la mise en place du projet, à savoir "pip install -e .".
 
 ### Remarques personnelles
 
